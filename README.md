@@ -357,4 +357,3 @@ This project is released under the [MIT License](LICENSE).
 ---
 
 *Developed as part of the Database Systems course — Oracle 21c | Session 2024–2025.*
-*For professional inquiries or collaboration, connect on [LinkedIn](https://linkedin.com/in/yourprofile).*
