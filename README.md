@@ -335,21 +335,6 @@ All data modification operations (`INSERT`, `UPDATE`, `DELETE`) are wrapped in e
 
 ---
 
-## Project Documentation
-
-A comprehensive project document is included in this repository, covering:
-
-- Full Software Requirements Specification (SRS)
-- EERD diagram description with all cardinalities and participation constraints
-- Normalization proof (1NF through 3NF/BCNF)
-- Complete DDL, DCL, DML, and PL/SQL scripts with line-by-line explanations
-- Advanced query examples (11 queries covering JOINs, subqueries, and set operations)
-- API endpoint reference and frontend walkthrough
-
-See: [NAMS\_Project\_Document.md](./NAMS_Project_Document.md)
-
----
-
 ## License
 
 This project is released under the [MIT License](LICENSE).
