@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAMS — News Agency Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar glass" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.1">
+    <div class="logo">📰 NAMS</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="journalists.html">Journalists</a></li>
+      <li><a href="editors.html">Editors</a></li>
+      <li><a href="subscribers.html">Subscribers</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>News Agency Management System</h1>
+    <p>Manage articles, journalists, editors, and more with a seamless premium experience.</p>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="stats-grid">
+    <div class="stat-card glass" data-tilt data-tilt-scale="1.05"><h2 id="total-articles">--</h2><p>Total Articles</p></div>
+    <div class="stat-card glass" data-tilt data-tilt-scale="1.05"><h2 id="total-journalists">--</h2><p>Journalists</p></div>
+    <div class="stat-card glass" data-tilt data-tilt-scale="1.05"><h2 id="total-subscribers">--</h2><p>Subscribers</p></div>
+    <div class="stat-card glass" data-tilt data-tilt-scale="1.05"><h2 id="total-sections">--</h2><p>Sections</p></div>
+  </div>
+
+  <!-- Latest Articles Table -->
+  <div class="container glass" style="margin-top: 2rem; margin-bottom: 2rem;">
+    <h2 class="section-title">Latest Published Articles</h2>
+    <div class="table-wrapper">
+      <table class="data-table" id="articles-table">
+        <thead>
+          <tr>
+            <th>ID</th><th>Title</th><th>Journalist</th>
+            <th>Section</th><th>Date</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="articles-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Vanilla Tilt JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

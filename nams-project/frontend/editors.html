@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editors - NAMS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar glass" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.1">
+    <div class="logo">📰 NAMS</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="journalists.html">Journalists</a></li>
+      <li><a href="editors.html">Editors</a></li>
+      <li><a href="subscribers.html">Subscribers</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Editor Management</h1>
+    <p>View, add, and manage news agency editors seamlessly.</p>
+  </div>
+
+  <div class="container">
+    <div class="form-card glass" data-tilt data-tilt-max="2">
+      <h2 class="section-title">Add New Editor</h2>
+      <form id="add-editor-form" onsubmit="event.preventDefault(); addEditor();">
+        <div class="form-group">
+          <label>Employee ID</label>
+          <input type="number" id="e-empid" required>
+        </div>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="e-name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="e-email" required>
+        </div>
+        <div class="form-group">
+          <label>Editor Level</label>
+          <select id="e-level" required>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            <option value="Chief">Chief</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Editor</button>
+      </form>
+    </div>
+
+    <div class="container glass" style="padding: 2rem;">
+      <h2 class="section-title">All Editors</h2>
+      <div class="table-wrapper">
+        <table class="data-table" id="editors-table">
+          <thead>
+            <tr>
+              <th>ID</th><th>Name</th><th>Email</th><th>Level</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="editors-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

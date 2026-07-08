@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribers - NAMS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar glass" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.1">
+    <div class="logo">📰 NAMS</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="journalists.html">Journalists</a></li>
+      <li><a href="editors.html">Editors</a></li>
+      <li><a href="subscribers.html">Subscribers</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Subscriber Management</h1>
+    <p>View, add, and remove news agency subscribers elegantly.</p>
+  </div>
+
+  <div class="container">
+    <div class="form-card glass" data-tilt data-tilt-max="2">
+      <h2 class="section-title">Add New Subscriber</h2>
+      <form id="add-subscriber-form" onsubmit="event.preventDefault(); addSubscriber();">
+        <div class="form-group">
+          <label>Subscriber ID</label>
+          <input type="number" id="s-subid" required>
+        </div>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="s-username" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="s-email" required>
+        </div>
+        <div class="form-group">
+          <label>Membership Type</label>
+          <select id="s-membership">
+            <option value="Free">Free</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Subscriber</button>
+      </form>
+    </div>
+
+    <div class="container glass" style="padding: 2rem;">
+      <h2 class="section-title">All Subscribers</h2>
+      <div class="table-wrapper">
+        <table class="data-table" id="subscribers-table">
+          <thead>
+            <tr>
+              <th>ID</th><th>Username</th><th>Email</th>
+              <th>Membership</th><th>Comments Made</th><th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="subscribers-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
